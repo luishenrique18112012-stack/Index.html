@@ -1,34 +1,43 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Guia de Bem-Estar | Saúde Mental e Física</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; color:#333; }
+                header { background:#1f6f54; color:#fff; padding:40px 20px; text-align:center; }
+                    section { padding:40px 20px; max-width:900px; margin:auto; }
+                        .cta { background:#ff9800; color:#fff; padding:15px 25px; display:inline-block; border-radius:6px; text-decoration:none; font-weight:bold; }
+                            .benefits { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+                                .card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+                                    .alert { background:#fff3cd; border-left:5px solid #ff9800; padding:15px; margin-top:20px; border-radius:6px; }
+                                        footer { background:#111; color:#fff; text-align:center; padding:20px; }
+                                          </style>
+                                          </head>
+                                          <body><header>
+                                            <h1>Guia Prático de Saúde Mental e Física</h1>
+                                              <p>Informações educativas para melhorar sua qualidade de vida no dia a dia</p>
+                                                <a class="cta" href="#comprar">Quero aprender agora</a>
+                                                </header><section>
+                                                  <h2>O que você vai encontrar neste guia</h2>
+                                                    <div class="benefits">
+                                                        <div class="card">Hábitos simples para reduzir estresse e ansiedade</div>
+                                                            <div class="card">Rotinas para melhorar sono, foco e energia</div>
+                                                                <div class="card">Cuidados básicos com o corpo e a mente</div>
+                                                                  </div>
+                                                                  </section><section>
+                                                                    <h2>Para quem é este conteúdo?</h2>
+                                                                      <p>Para pessoas que buscam entender melhor sua saúde mental e física, criar hábitos mais saudáveis e ter mais equilíbrio na rotina.</p>
+                                                                      </section><section>
+                                                                        <h2>Importante</h2>
+                                                                          <div class="alert">
+                                                                              <p>Este material é apenas educativo e informativo. Ele <strong>não substitui</strong> acompanhamento médico, psicológico ou tratamento profissional.</p>
+                                                                                </div>
+                                                                                </section><section id="comprar">
+                                                                                  <h2>Acesse o conteúdo completo</h2>
+                                                                                    <p><strong>Preço acessível: R$14,90</strong></p>
+                                                                                      <a class="cta" href="#">Acessar agora</a>
+                                                                                      </section><footer>
+                                                                                        <p>© 2026 - Conteúdo educativo sobre bem-estar</p>
+                                                                                        </footer></body>
+                                                                                        </html>
