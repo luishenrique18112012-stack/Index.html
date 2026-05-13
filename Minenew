@@ -1,0 +1,64 @@
+export default function Dashboard() { const cards = [ { title: 'Usuários', value: '12.4K', icon: '👥' }, { title: 'Vendas', value: 'R$ 48K', icon: '💰' }, { title: 'Visitas', value: '89K', icon: '📈' }, { title: 'Notificações', value: '23', icon: '🔔' }, ];
+
+return ( <div className="min-h-screen bg-black text-white p-6"> <header className="flex items-center justify-between mb-8"> <div> <h1 className="text-4xl font-bold">Dashboard Futurista</h1> <p className="text-gray-400 mt-2">Painel moderno para GitHub Pages</p> </div>
+
+<button className="bg-cyan-500 hover:bg-cyan-400 transition px-5 py-2 rounded-2xl shadow-lg text-black font-bold">
+      Atualizar
+    </button>
+  </header>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    {cards.map((card, index) => (
+      <div
+        key={index}
+        className="bg-zinc-900 border border-cyan-500/30 rounded-3xl p-6 shadow-xl hover:scale-105 transition"
+      >
+        <div className="text-5xl mb-4">{card.icon}</div>
+        <h2 className="text-gray-400 text-lg">{card.title}</h2>
+        <p className="text-3xl font-bold mt-2">{card.value}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div className="lg:col-span-2 bg-zinc-900 rounded-3xl p-6 border border-cyan-500/20 shadow-xl">
+      <h2 className="text-2xl font-bold mb-4">Atividade</h2>
+
+      <div className="space-y-4">
+        <div className="bg-black/40 p-4 rounded-2xl flex justify-between">
+          <span>Novo usuário registrado</span>
+          <span className="text-cyan-400">Agora</span>
+        </div>
+
+        <div className="bg-black/40 p-4 rounded-2xl flex justify-between">
+          <span>Venda realizada</span>
+          <span className="text-green-400">2 min atrás</span>
+        </div>
+
+        <div className="bg-black/40 p-4 rounded-2xl flex justify-between">
+          <span>Servidor atualizado</span>
+          <span className="text-yellow-400">10 min atrás</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-zinc-900 rounded-3xl p-6 border border-cyan-500/20 shadow-xl">
+      <h2 className="text-2xl font-bold mb-4">Perfil</h2>
+
+      <div className="flex flex-col items-center text-center">
+        <div className="w-24 h-24 rounded-full bg-cyan-500 flex items-center justify-center text-4xl text-black font-bold mb-4">
+          L
+        </div>
+
+        <h3 className="text-xl font-bold">Luis Henrique</h3>
+        <p className="text-gray-400">Administrador</p>
+
+        <button className="mt-6 bg-cyan-500 hover:bg-cyan-400 text-black px-5 py-2 rounded-2xl font-bold transition">
+          Editar Perfil
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+); }
